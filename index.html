@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eco Empower</title>
+	<link rel="icon" type="images/x-icon" href="img/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap"
+		rel="stylesheet">
+	<!-- animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="css/navbar&footer.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/wallet.js"></script>
+</head>
+
+<body>
+	<section id="backgroundimage" class="mb-5">
+		<!-- nav -->
+		<!-- <section> -->
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="index-navbarFont">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img id="j-navbarBrand" src="img/navbarbrand.png"
+						alt="Brand Logo"></a>
+				<button class="navbar-toggler" data-bs-target="#j-navBar" data-bs-toggle="collapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="j-navBar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link text-warning fw-bold" id="wallet-nav-link">💰 Eco Wallet</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="pages/item.html">Items</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="pages/advice.html">Advice</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="pages/frugality.html">Frugality</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/recycle.html">Recycle</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="pages/aboutus.html">About Us</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="pages/faq.html">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- </section> -->
+		<!-- nav end-->
+
+		<!-- banner -->
+		<section class="py-5 mt-4">
+			<div class="container-fluid" id="banner-container">
+				<div class="row">
+
+					<div class="col-sm-12 col-md-8 col-lg-8 text-center pb-5" id="hbn">
+						<h1 class="mb-3 indexBanner-text" id="j-LifeMadeSimpleHeading">Unite for a Sustainable Future
+						</h1>
+						<p class="mb-4 text-center indexBanner-text" id="j-LifeMadeSimple-text">Let's make our
+							environment<br>clean and healthy by recycling.</p>
+						<a href="pages/frugality.html"><button type="button"
+								class="btn btn-success btn-default btn-lg btn-borderRadius"
+								id="index-banner-btn">Explore More</button></a>
+					</div>
+
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<div id="j-carousel" class="carousel slide" data-bs-ride="carousel">
+
+							<!-- Indicators/dots -->
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#j-carousel" data-bs-slide-to="0"
+									class="active"></button>
+								<button type="button" data-bs-target="#j-carousel" data-bs-slide-to="1"></button>
+								<button type="button" data-bs-target="#j-carousel" data-bs-slide-to="2"></button>
+							</div>
+
+							<!-- The slideshow/carousel -->
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="1000">
+									<img src="img/carousel1.png" alt="Recycled crafts with plants"
+										class="d-block img-fluid j-carousel-img-in-indexpage">
+								</div>
+
+								<div class="carousel-item" data-bs-interval="1000">
+									<img src="img/carousel2.png" alt="Recycled crafts with plants"
+										class="d-block img-fluid j-carousel-img-in-indexpage">
+								</div>
+
+								<div class="carousel-item" data-bs-interval="1000">
+									<img src="img/carousel3.png" alt="Recycled crafts with plants"
+										class="d-block img-fluid j-carousel-img-in-indexpage">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- banner end -->
+
+	<!-- miniboxes start -->
+	<section>
+		<div class="container-fluid text-center">
+			<div class="hnumbers d-flex flex-md-row flex-wrap justify-content-center">
+
+				<div id="j-smallBoxBorderRadius1" class="hrect" data-bs-toggle="modal" data-bs-target="#modal1"></div>
+
+				<div id="j-smallBoxBorderRadius2" class="hrect" data-bs-toggle="modal" data-bs-target="#modal2"></div>
+
+				<div id="j-smallBoxBorderRadius3" class="hrect" data-bs-toggle="modal" data-bs-target="#modal3"></div>
+
+				<div id="j-smallBoxBorderRadius4" class="hrect" data-bs-toggle="modal" data-bs-target="#modal4"></div>
+			</div>
+		</div>
+	</section>
+	<!-- miniboxes end -->
+
+	<!-- modal boxs for small cards start -->
+	<section>
+		<!-- Modal 1 -->
+		<div class="modal fade" id="modal1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content j-modalbg-inIndexPage">
+					<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button></div>
+					<div class="modal-body">
+						<div class="row">
+
+							<div class="modal-image col-sm-12 col-md-4 col-lg-4">
+								<img class="j-alert-img" src="img/modal-pic-1.png" alt="Modal Image">
+							</div>
+
+							<div class="modal-text text-light  text-center col-sm-12 col-md-8 col-lg-8">
+								<h2>Raising Awareness</h2>
+								<p class="j-modal-test-align">These websites can play a crucial role in educating the
+									public about the significance of recycling and the urgency of
+									addressing global warming. They can provide accessible and accurate information to
+									help people
+									understand the environmental challenges we face.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 2 -->
+		<div class="modal fade" id="modal2">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content j-modalbg-inIndexPage">
+					<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button></div>
+					<div class="modal-body">
+						<div class="row">
+
+							<div class="modal-image col-sm-12 col-md-4 col-lg-4">
+								<img class="j-alert-img" src="img/modal-pic-2.png" alt="Modal Image">
+							</div>
+
+							<div class="modal-text text-light  text-center col-sm-12 col-md-8 col-lg-8">
+								<h2>Resource for Solutions</h2>
+								<p class="j-modal-test-align">Recycling and global warming information websites can
+									offer practical tips and solutions for individuals, businesses, and
+									communities to reduce their carbon footprint and promote recycling. This might
+									include guidance
+									on energy-efficient practices, waste reduction strategies, and sustainable
+									consumption.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 3 -->
+		<div class="modal fade" id="modal3">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content j-modalbg-inIndexPage">
+					<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button></div>
+					<div class="modal-body">
+						<div class="row">
+
+							<div class="modal-image col-sm-12 col-md-4 col-lg-4">
+								<img class="j-alert-img" src="img/modal-pic-3.png" alt="Modal Image">
+							</div>
+
+							<div class="modal-text text-light  text-center col-sm-12 col-md-8 col-lg-8">
+								<h2>Community Engagement</h2>
+								<p class="j-modal-test-align">
+									These websites can foster a sense of community among individuals who are passionate
+									about environmental issues.
+									They can facilitate discussions, forums, and social media interactions, allowing
+									people to share ideas, experiences, and resources.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 4 -->
+		<div class="modal fade" id="modal4">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content j-modalbg-inIndexPage">
+					<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button></div>
+					<div class="modal-body">
+						<div class="row">
+
+							<div class="modal-image col-sm-12 col-md-4 col-lg-4">
+								<img class="j-alert-img" src="img/modal-pic-4.png" alt="Modal Image">
+							</div>
+
+							<div class="modal-text text-light text-center col-sm-12 col-md-8 col-lg-8">
+								<h2>Youth Engagement</h2>
+								<p class="j-modal-test-align"> Given that younger generations are particularly concerned
+									about the environment, these websites can provide educational resources for students
+									and educators. They can offer
+									classroom materials, lesson plans, and activities that help young people understand
+									the
+									importance of recycling and addressing global warming.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- modal boxs for small cards end -->
+
+	<!-- bee pic section start -->
+	<section class="container mt-5">
+		<div class="row">
+
+			<div class="col-sm-12 col-md-12 col-lg-6">
+
+				<h2 class="mb-4 text-center"><b>The Power of Recycling</b></h2>
+				<p>Recycling is more than just a trend; it's a vital step towards creating a sustainable future for our
+					planet. By recycling,
+					<br>we can:
+				</p>
+				<ul>
+					<li class="mt-2">Conserve valuable natural resources, such as trees, water, and minerals.</li>
+					<li class="mt-2">Reduce energy consumption and greenhouse gas emissions, helping combat climate
+						change.</li>
+					<li class="mt-2">Minimize landfill waste and the release of harmful toxins into the environment.
+					</li>
+					<li class="mt-2">Create jobs and support local economies in the recycling industry.</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-12 col-md-12 col-lg-6">
+				<img src="https://i.pinimg.com/736x/75/21/da/7521da184e67fb0e130851cf4a9ba05b.jpg"
+					class="img-fluid index-card-bee-pic" alt="Recycled Craft">
+			</div>
+
+
+		</div>
+	</section>
+	<!-- bee pic section end -->
+
+	<!-- recycled crafts 6 imgs start -->
+	<section>
+		<div class="container mt-5">
+			<h1 class="text-center">Recycled Crafts</h1>
+			<div class="row mt-4">
+
+				<div class="col-md-2 col-4 mb-2">
+					<a href="pages/item.html#slideredit"><img src="img/itemData1.jpg"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluid j-indexMiniPicinIndexPage"></a>
+				</div>
+
+				<div class="col-md-2 col-4 mb-2">
+					<a href="pages/item.html#slideredit"><img src="img/itemData2.jpg"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluid j-indexMiniPicinIndexPage"></a>
+				</div>
+
+				<div class="col-md-2 col-4 mb-2">
+					<a href="pages/item.html#slideredit"><img src="img/itemData3.jpg"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluid j-indexMiniPicinIndexPage"></a>
+				</div>
+
+				<div class="col-md-2 col-4">
+					<a href="pages/item.html#slideredit1"><img src="img/itemData8.jpg"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluid j-indexMiniPicinIndexPage"></a>
+				</div>
+
+				<div class="col-md-2 col-4">
+					<a href="pages/item.html#slideredit2"><img src="img/itemData13.png"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluid j-indexMiniPicinIndexPage"></a>
+				</div>
+
+				<div class="col-md-2 col-4">
+					<a href="pages/item.html#slideredit2"><img src="img/itemData15.png"
+							alt="Recycle crafts that you can buy in our website"
+							class="img-fluidn j-indexMiniPicinIndexPage"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- recycled crafts 6 imgs end -->
+
+	<!-- consequences start -->
+	<section class="container mb-5">
+		<h1 class="text-center mt-5">Impacts of Non-Recycling</h1>
+
+		<div class="row no-gutters mt-3">
+			<div class="py-3 col-lg-6 col-md-12 col-sm-12 justify-content-center">
+				<div class="card">
+					<div class="ratio ratio-16x9 ">
+						<video autoplay muted width="80%" height="800vh" controls>
+							<source src="img/eco-vd.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+
+			<div class="pt-5 col-lg-6 col-md-12 col-sm-12">
+				<ul>
+					<li class="mt-2">Not recycling or handling waste well wastes useful items like paper and plastic,
+						harming nature.</li>
+					<li class="mt-2">It depletes trees and materials, hurting forests and wildlife.</li>
+					<li class="mt-2">Landfills release gases, worsening climate change and impacting the oceans.</li>
+					<li class="mt-2">To break this cycle: recycle, use less, and treat Earth kindly for a cleaner,
+						healthier world!</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- consequences end -->
+
+	<!-- about us start -->
+	<section class="mb-5">
+		<div class="container text-center my-5">
+			<div class="row mt-5">
+				<div class="col-md-6 d-flex align-items-center justify-content-center">
+					<img src="img/carousel2.png" alt="About Us" class="img-fluid rounded shadow-sm"
+						style="max-height: 400px; border-radius: 20px;">
+				</div>
+
+				<div class="col-md-6 d-flex flex-column justify-content-center text-start ps-5">
+					<h3>Discover Our Story!!</h3>
+					<p>Are you interested in more about us or getting in touch with us?<br>
+						Explore the rich history and values that shape our journey, as we eagerly await your valuable
+						suggestions.</p>
+					<a href="pages/aboutus.html"><button class="btn btn-success" id="abtusbtn" type="button">Explore
+							More</button></a>
+				</div>
+			</div>
+
+		</div>
+		</div>
+	</section>
+
+	<!-- about us end -->
+
+	<!-- footer start-->
+	<section id="sec55">
+		<div class="container text-center Mcontactus">
+			<h4 class="Mh4">Contact Us</h4>
+			<span class="emailandgmail">Email:ecoempower@gmail.com</span>
+			<br>
+			<span class="emailandgmail">Phone:+91 8919561672</span>
+			<p class="mt-3 text-center">
+				Feel free to drop us a message or give us a call. Whether you're curious about our products, need help
+				with an order, or want to share your thoughts, we're all ears. Your satisfaction is our top priority,
+				and we're committed to addressing your needs promptly.
+			</p>
+		</div>
+
+		<footer class="bg-light pb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center mt-3">
+						<h3>Feedback</h3>
+						<p>We value your feedback. Please let us know how we can improve.</p>
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="feedback-input"
+									placeholder="Enter your feedback" aria-label="Enter your feedback"
+									aria-describedby="submit-button">
+								<button class="btn btn-success" type="button" id="submit-button" data-bs-toggle="modal"
+									data-bs-target="#feedback-modal" disabled>Submit</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-4 text-center mt-3">
+						<h3>About Us</h3>
+						<a href="pages/aboutus.html" class="footerTexttoDark">
+							<p class="text-center">Get to know us better by exploring our website</p>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center mt-3">
+						<h3>FAQ</h3>
+						<a href="pages/faq.html" class="footerTexttoDark">
+							<p class="text-center">Discover solutions to frequently asked questions</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="modal fade" id="feedback-modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalLabel4">Thanks for your Feedback!!</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p>Have a nice day!</p><i
+									class="fa-solid fa-heart ms-1 font-awesome-icon-in-footer"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<hr class="my-4">
+				<div class="text-center">
+					<i>Thank you for considering us. We can't wait to hear from you and assist you in any way we
+						can!</i>
+
+					<hr>
+					<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x footericon-color"></i></a>
+					<a href="https://www.instagram.com/accounts/login/"><i
+							class="fa-brands fa-instagram fa-2x mx-5 footericon-color"></i></a>
+					<a href="https://discord.com/login"><i class="fa-brands fa-discord fa-2x footericon-color"></i></a>
+				</div>
+		</footer>
+
+		<!-- copyright -->
+
+
+		<div class="text-success d-flex justify-content-center my-4">
+			Copyright &copy; 2026 Eco Empower | Designed by Aragonda Srinivas
+		</div>
+
+
+
+	</section>
+
+	<!-- footer end-->
+	<script src="js/index.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

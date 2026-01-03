@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Eco Empower</title>
+    <link rel="icon" type="images/x-icon" href="../img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar&footer.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <!-- We need access to wallet data logic, but wallet.js is encapsulated. 
+         We might need to read localStorage directly for admin visualization 
+         or expose more helpers. For now, we read directly in script below. -->
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Empathy Admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="adminNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">View Site</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Admin Dashboard</h2>
+
+        <!-- Stats Cards -->
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Total Users</div>
+                    <div class="card-body">
+                        <h1 class="card-title" id="totalUsers">0</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">Total Orders</div>
+                    <div class="card-body">
+                        <h1 class="card-title" id="totalOrders">0</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Total Wallet Holdings</div>
+                    <div class="card-body">
+                        <h1 class="card-title" id="totalWallet">₹0.00</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users Table -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-header bg-light">
+                <h4 class="mb-0">User Management</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Wallet Balance</th>
+                                <th>Joined</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTableBody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Table -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-header bg-light">
+                <h4 class="mb-0">User Feedbacks</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Feedback</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feedbackTableBody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Check Admin Access
+            if (!authSystem.isAdmin()) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            // Helper for currency formatting
+            const formatCurrency = (amount) => '₹' + parseFloat(amount).toFixed(2);
+
+            // Load Dashboard Stats
+            $.ajax({
+                url: config.API_URL + '/admin/stats',
+                method: 'GET',
+                headers: config.getHeaders(),
+                success: function (response) {
+                    if (response.success) {
+                        $('#totalUsers').text(response.stats.totalUsers);
+                        $('#totalOrders').text(response.stats.totalOrders);
+                        $('#totalWallet').text(formatCurrency(response.stats.totalWalletHoldings));
+                    }
+                }
+            });
+
+            // Load Users
+            $.ajax({
+                url: config.API_URL + '/admin/users',
+                method: 'GET',
+                headers: config.getHeaders(),
+                success: function (response) {
+                    if (response.success) {
+                        var usersHtml = '';
+                        response.users.forEach(function (user) {
+                            usersHtml += `
+                                <tr>
+                                    <td>${user.username}</td>
+                                    <td>${user.email || 'N/A'}</td>
+                                    <td><span class="badge bg-${user.role === 'admin' ? 'danger' : 'primary'}">${user.role}</span></td>
+                                    <td>${formatCurrency(user.wallet_balance)}</td>
+                                    <td>${new Date(user.created_at).toLocaleDateString()}</td> 
+                                </tr>
+                            `;
+                        });
+                        $('#usersTableBody').html(usersHtml);
+                    }
+                }
+            });
+
+            // Load Feedbacks
+            $.ajax({
+                url: config.API_URL + '/admin/feedbacks',
+                method: 'GET',
+                headers: config.getHeaders(),
+                success: function (response) {
+                    if (response.success) {
+                        var feedbackHtml = '';
+                        response.feedbacks.forEach(function (fb) {
+                            feedbackHtml += `
+                                <tr>
+                                    <td>${fb.username || 'Guest'}</td>
+                                    <td>${fb.message}</td>
+                                    <td>${new Date(fb.created_at).toLocaleDateString()}</td>
+                                </tr>
+                            `;
+                        });
+                        if (response.feedbacks.length === 0) {
+                            feedbackHtml = '<tr><td colspan="3" class="text-center text-muted">No feedbacks yet</td></tr>';
+                        }
+                        $('#feedbackTableBody').html(feedbackHtml);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

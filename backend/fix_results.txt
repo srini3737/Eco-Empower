@@ -1,0 +1,8 @@
+Checking Admin Wallet...
+Admin found: 35632a71-9d55-450f-91d1-50bdb526104a
+Admin wallet exists. Balance: 0
+
+--- Audit All Users ---
+User: srini, Wallet: {"balance":490}, Balance: 490
+User: admin, Wallet: {"balance":0}, Balance: 0
+User: raju, Wallet: {"balance":10}, Balance: 10

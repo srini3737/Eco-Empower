@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eco Empower</title>
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/navbar&footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/config.js"></script>
+	<script src="../js/auth.js"></script>
+	<script src="../js/wallet.js"></script>
+</head>
+
+<body>
+	<!-- nav -->
+
+	<section id="backgroundimage">
+		<!-- nav -->
+		<section>
+			<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="index-navbarFont">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html"><img id="j-navbarBrand" src="../img/navbarbrand.png"
+							alt="Brand Logo"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#j-navBar">
+						<a href="#" class="nav-link text-warning fw-bold" id="wallet-nav-link">💰 Eco Wallet</a>
+					</button>
+					<div class="collapse navbar-collapse" id="j-navBar">
+						<ul class="navbar-nav ms-auto">
+
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link  active" href="item.html">Items</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="advice.html">Advice</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="frugality.html">Frugality</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="recycle.html">Recycle</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="aboutus.html">About Us</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="faq.html">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<!-- nav end-->
+
+		<!-- banner -->
+		<h1 class="text-light text-center item-heding">Discover and shop our unique recycled crafts, where creativity
+			meets sustainability. Join us today!</h1>
+	</section>
+
+	<!-- banner end -->
+	<div id="item-button">
+		<div>
+			<div class="col">
+				<button type="button" class="btn btn-success" disabled data-bs-toggle="modal" data-bs-target="#cart"
+					id="update">Cart (<span class="total-count"></span>)</button>
+				<button class="clear-cart btn btn-danger" id="clear">Clear Cart</button>
+			</div>
+		</div>
+		<!-- <button id="go">GO</button> -->
+	</div>
+	<!-- img slide start -->
+	<section id="j-slider-middle" class="pt-0 container-fluid">
+
+		<h1 class="text-center mt-5">Recycled Crafts</h1>
+
+		<div id="slideredit" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-12 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-1">
+							<img class="pt-3 cardimg" src="../img/itemData1.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Flowerpot Holder</h3>
+							<p class="text-center price">₹30</p>
+							<a href="#" data-name="Iron Funnel Flowerpot Holder" data-price="30"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-4 mx-5 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-2">
+							<img class="pt-3 cardimg" src="../img/itemData2.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Iron Jug Flowerpot</h3>
+							<p class="text-center price">₹30</p>
+							<a href="#" data-name="Iron Jug Flowerpot" data-price="30"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-4 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-3">
+							<img class="pt-3 cardimg" src="../img/itemData3.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Oil Drum Table</h3>
+							<p class="text-center price">₹160</p>
+							<a href="#" data-name="Oil Drum Table" data-price="160"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-4">
+							<img class="pt-3 cardimg" src="../img/itemData4.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Wall By Door</h3>
+							<p class="text-center price">₹600</p>
+							<a href="#" data-name="Wooden Door Room" data-price="600"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mx-5 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-5">
+							<img class="pt-3 cardimg" src="../img/itemData5.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Hand Mill Table</h3>
+							<p class="text-center price">₹600</p>
+							<a href="#" data-name="Hand Mill Table" data-price="600"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-6">
+							<img class="pt-3 cardimg" src="../img/itemData6.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Glass Vase</h3>
+							<p class="text-center price">₹40</p>
+							<a href="#" data-name="Glass Vase" data-price="40"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#slideredit" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon carousel-dark" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+
+				<button class="carousel-control-next" type="button" data-bs-target="#slideredit" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<div id="slideredit1" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-7">
+							<img class="pt-3 cardimg" src="../img/itemData7.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Bottle Flowerpot</h3>
+							<p class="text-center price">₹12</p>
+							<a href="#" data-name="Plastic Water-bottle Flowerpot" data-price="12"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mx-5 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-8">
+							<img class="pt-3 cardimg" src="../img/itemData8.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Dog Toy Flowerpot</h3>
+							<p class="text-center price">₹40</p>
+							<a href="#" data-name="Dog Toy Flowerpot" data-price="40"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-9">
+							<img class="pt-3 cardimg" src="../img/itemData9.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Mortor Flowerpot</h3>
+							<p class="text-center price">₹100</p>
+							<a href="#" data-name="Mortor Flowerpot" data-price="100"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-10">
+							<img class="pt-3 cardimg" src="../img/itemData10.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Plastic Bottle Flowerpot</h3>
+							<p class="text-center">₹8</p>
+							<a href="#" data-name="Plastic Bottle Flowerpot" data-price="8"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mx-5 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-11">
+							<img class="pt-3 cardimg" src="../img/itemData11.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Tin Mosquito Repellent Coil</h3>
+							<p class="text-center">₹40</p>
+							<a href="#" data-name="Tin Mosquito Repellent Coil" data-price="40"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-12">
+							<img class="pt-3 cardimg" src="../img/itemData12.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Wooden Colock Table</h3>
+							<p class="text-center">₹400</p>
+							<a href="#" data-name="Wooden Colock Table" data-price="400"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#slideredit1" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#slideredit1" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<div id="slideredit2" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-13">
+							<img class="pt-3 cardimg" src="../img/itemData13.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Eco-Print Cloths</h3>
+							<p class="text-center price">₹700</p>
+							<a href="#" data-name="Eco-Print Cloths" data-price="700"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mx-5 mt-4 mb-3 h-100  Card-height" id="j-item-modal-img-14">
+							<img class="pt-3 cardimg" src="../img/itemData14.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Iron Flower Pot</h3>
+							<p class="text-center price">₹80</p>
+							<a href="#" data-name="Iron Flower Pot" data-price="80"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-15">
+							<img class="pt-3 cardimg" src="../img/itemData15.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter1">Bamboo Flowerpot</h3>
+							<p class="text-center price">₹60</p>
+							<a href="#" data-name="Bamboo Flowerpot" data-price="60"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="row d-flex justify-content-center">
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-16">
+							<img class="pt-3 cardimg" src="../img/itemData16.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Soft Drink Can Flowerpot</h3>
+							<p class="text-center">₹30</p>
+							<a href="#" data-name="Soft Drink Can Flowerpot" data-price="30"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mx-5 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-17">
+							<img class="pt-3 cardimg" src="../img/itemData17.png" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Condensed Milk Tin Spoon Container</h3>
+							<p class="text-center">₹20</p>
+							<a href="#" data-name="Tin Spoon Container" data-price="20"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+						<div class="card col-sm-12 col-md-6 mt-4 mb-3 h-100 Card-height" id="j-item-modal-img-18">
+							<img class="pt-3 cardimg" src="../img/itemData18.jpg" alt="Recycled Item">
+							<h3 class="text-center TextCenter">Oil Container Flowerpot</h3>
+							<p class="text-center">₹75</p>
+							<a href="#" data-name="Oil Container Flowerpot" data-price="75"
+								class="add-to-cart btn btn-success addToCard-btninCard">Add to Cart</a>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#slideredit2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#slideredit2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="modal fade h-100" id="cart">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+						</button>
+					</div>
+
+					<div class="">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="d-block">
+									<table class="show-cart table">
+
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="container">
+							<div class="col-md-12">
+								<form method="post">
+									<div class="mb-3">
+										<label for="nameforFormcontrol" class="form-label">Name</label>
+										<input type="text" class="form-control" id="nameforFormcontrol"
+											placeholder="Enter your name...">
+									</div>
+									<div class="mb-3">
+										<label for="phNoforFormcontrol" class="form-label">Phone Number</label>
+										<input type="text" class="form-control" id="phNoforFormcontrol"
+											placeholder="Enter your phone number...">
+									</div>
+									<div class="mb-3">
+										<label for="addressforFormcontrol" class="form-label">Address</label>
+										<textarea class="form-control" id="addressforFormcontrol" rows="2"
+											placeholder="Enter your address.."></textarea>
+									</div>
+								</form>
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="modal-footer d-flex justify-content-start">
+						<div id="totalitemPriceinModal">Total price: ₹<span class="total-cart ms-2"></span> <span
+								class="wallet-info-cart ms-3 text-success fw-bold"></span></div>
+						<button type="button" id="orderNowButton" class="btn btn-success">Order now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="orderSuccessModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="orderSuccessModalLabel">Your Order is Successful!</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+						</button>
+					</div>
+					<div class="modal-body">
+						<!-- Success message -->
+						<p>Your order has been placed successfully. Thank you for shopping with us!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- img slide end -->
+
+	<!-- footer start-->
+	<section id="sec55">
+		<div class="container text-center Mcontactus">
+			<h4 class="Mh4">Contact Us</h4>
+			<span class="emailandgmail">Email:ecoempower@gmail.com</span>
+			<br>
+			<span class="emailandgmail">Phone:+91 8919561672</span>
+			<p class="mt-3 text-center">
+				Feel free to drop us a message or give us a call. Whether you're curious about our products, need help
+				with an order, or want to share your thoughts, we're all ears. Your satisfaction is our top priority,
+				and we're committed to addressing your needs promptly.
+			</p>
+		</div>
+
+		<footer class="bg-light pb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center mt-3">
+						<h3>Feedback</h3>
+						<p>We value your feedback. Please let us know how we can improve.</p>
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="feedback-input"
+									placeholder="Enter your feedback" aria-label="Enter your feedback"
+									aria-describedby="submit-button">
+								<button class="btn btn-success" type="button" id="submit-button" data-bs-toggle="modal"
+									data-bs-target="#feedback-modal" disabled
+									onclick="clearInputField()">Submit</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-4 text-center mt-3">
+						<h3>About Us</h3>
+						<a href="pages/aboutus.html" class="footerTexttoDark">
+							<p class="text-center">Get to know us better by exploring our website</p>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center mt-3">
+						<h3>FAQ</h3>
+						<a href="pages/faq.html" class="footerTexttoDark">
+							<p class="text-center">Discover solutions to frequently asked questions</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="feedback-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalLabel4">Thanks for your Feedback!!</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p>Have a nice day!</p><i class="fa-solid fa-heart ms-1 font-awesome-icon-in-footer"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<hr class="my-4">
+			<div class="text-center">
+				<i>Thank you for considering us. We can't wait to hear from you and assist you in any way we can!</i>
+
+				<hr>
+				<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x footericon-color"></i></a>
+				<a href="https://www.instagram.com/accounts/login/"><i
+						class="fa-brands fa-instagram fa-2x mx-5 footericon-color"></i></a>
+				<a href="https://discord.com/login"><i class="fa-brands fa-discord fa-2x footericon-color"></i></a>
+			</div>
+		</footer>
+
+		<!-- copyright -->
+
+
+		<div class="text-success d-flex justify-content-center my-4">
+			Copyright &copy; 2026 Eco Empower | Designed by Aragonda Srinivas
+		</div>
+
+
+
+	</section>
+
+	<!-- footer end-->
+	<script src="../js/index.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

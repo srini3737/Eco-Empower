@@ -1,0 +1,14 @@
+Query Success!
+Number of users found: 3
+
+User 1: raju (user)
+Wallet Raw Data: {"balance":10}
+Extracted Balance: 10
+
+User 2: admin (admin)
+Wallet Raw Data: {"balance":0}
+Extracted Balance: 0
+
+User 3: srini (user)
+Wallet Raw Data: {"balance":490}
+Extracted Balance: 490

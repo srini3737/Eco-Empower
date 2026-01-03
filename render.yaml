@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: eco-empower-api
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        fromGroup: eco-empower-secrets
+      - key: SUPABASE_KEY
+        fromGroup: eco-empower-secrets
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://your-frontend-url.vercel.app

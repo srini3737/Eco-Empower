@@ -1,0 +1,105 @@
+/* navbar start */
+body{
+    
+}
+#index-navbarFont{
+    font-size: 18.5px;
+    font-weight: 300;
+    background-color: #9EB384;
+    max-width: 100%;
+}
+
+.nav-item{
+    text-transform:uppercase;
+    font-weight: 100;
+    
+}
+
+.nav-link {
+    position: relative;
+    padding: 20px 0px;
+    margin: 0px 20px;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+#j-navbarBrand{
+    width: 220px;
+    height: 8vh;
+}
+/* navbar start */
+
+/* footer */
+.redit,.insta,.fb{
+    margin: 50px;
+}
+
+.Mcontactus{
+    padding: 30px;
+    background-color: #CEDEBD;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.J-contactUs{
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.emailandgmail{
+    margin-left: 30px;
+}
+
+.Mh4{
+    font-size: 6vh;
+}
+
+#j-phoneText{
+    text-align: start;
+    margin-left: 30px;
+}
+
+.footericon-color{
+    color: #3e4e30;
+    transition: 0.8s;
+}
+
+.footericon-color:hover{
+    color: #609966;
+}
+
+.font-awesome-icon-in-footer{
+    color: #9EB384;
+}
+
+#copyrightUnderlineNone{
+    color: #618264;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footerTexttoDark{
+    text-decoration: none;
+    color: black;
+}
+
+.footerTexttoDark:hover{
+    text-decoration: none;
+    color: #618264;
+}
+/* footer end */

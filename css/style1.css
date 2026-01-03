@@ -1,0 +1,753 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#backgroundimage{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; 
+    background-attachment: fixed; 
+    height: 700px;  
+    max-width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../img/j-body-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+#banner-container{
+    margin:0 auto ;
+    color: white;
+    align-items: center;
+}
+
+.indexBanner-text{
+    color: #E1FFB1;
+}
+
+#hbn{
+    padding-top: 15vmin ;
+}
+
+#j-carousel{
+    padding-top: 5vmin;
+    
+}
+
+.j-carousel-img-in-indexpage{
+    width: 500px;
+    border-radius:100%;
+}
+
+#j-LifeMadeSimpleHeading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#j-LifeMadeSimple-text{
+    font-size: 32px;
+}
+
+.btn-borderRadius{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px gray;
+    background-color:  #618264;
+}
+
+.btn-borderRadius:hover{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px rgb(81, 100, 81);
+    background-color:  #618264;
+}
+
+#ClcikHere{
+    font-family: 'Poppins', sans-serif;
+}
+
+#YouthEngagement, #ResourceForSolutions, #CommunityEngagement, #YouthEngagement{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.hnumbers{
+    margin-top:-20vmin;
+}
+
+.hnumbers .hrect{
+    background:white;
+    width:13rem;
+    height:10rem;
+    margin:1rem;
+    border-bottom-right-radius:3rem;
+}
+    
+#j-smallBoxBorderRadius1{
+    z-index:1;
+    background-image: url('../img/smallBox1.png');
+    background-repeat: no-repeat;
+}
+
+#j-smallBoxBorderRadius2{
+    z-index:1;
+    background-image: url('../img/smallBox2.png');
+    background-repeat: no-repeat;
+}
+
+#j-smallBoxBorderRadius3{
+    z-index:1;
+    background-image: url('../img/smallBox3.png');
+    background-repeat: no-repeat;
+}
+
+#j-smallBoxBorderRadius4{
+    z-index:1;
+    background-image: url('../img/smallBox4.png');
+    background-repeat: no-repeat;
+}
+
+/* styles for modal */
+.j-alert-img{
+    width: 260px;
+    height: 260px;
+}
+
+/* modal box bg */
+.j-modalbg-inIndexPage{
+    background-color: #5F8D4E;
+}
+
+.j-modal-test-align{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.index-card-bee-pic{
+    max-height: 61vh;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.j-indexMiniPicinIndexPage{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.Mtextes{
+    width: auto;
+    box-shadow: 1px 5px 20px rgb(134, 134, 134);
+    margin: 80px;
+    margin-left: 6%;
+    margin-bottom: 30px;
+}
+
+.Mtextes h5{
+    font-size: 35px;
+}
+
+.Mtextes p{
+    font-size: 18px;
+}
+
+.Consequences{
+    margin-top: 50px;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.modal-image {
+    flex: 1;
+    padding: 1rem;
+}
+
+.modal-text {
+    flex: 2;
+    padding: 1rem;
+}
+
+.aboutUsinIndex-carousel{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20%;
+    border: 5px solid #618264;
+    margin: auto;
+}
+
+
+/* itemdata */
+.itemdataM{
+    width: 30vh;
+}
+
+/* itemdata */
+.cart-modeal-height{
+    max-height: 100vh;
+}
+
+/* item cards */
+.itemcardM {
+    margin: 1px;
+    width: 18rem;
+}
+
+/* item cards */
+.card-text{
+    text-align: start;
+}
+
+#j-machine1{
+    height: auto;
+}
+
+#j-ExploreMoreBtn{
+    display: block;
+    margin: auto;
+}
+
+#cover{
+    padding: 20vmin;
+}
+
+#cover .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 88%;
+    border-radius:0.2em;
+}
+
+#contentOfCons{
+    text-align: start;
+}
+
+#twoCol{
+    width: 300px;
+}
+
+#cover .row .col-md-6:last-child{
+    position: relative;
+}
+
+#cover .row .col-md-6 .second{
+    position:absolute;
+    height: auto;
+    top: 10vmin;
+    left: -25vmin;
+    border-radius:2px;
+    text-align:left;
+    background: white;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgb(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.aboutUsinIndexBtn{
+    border-radius: 100%;
+}
+
+#abtusbtn{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px gray;
+    background-color:  rgb(153, 185, 119);
+}
+
+#abtusbtn:hover{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px rgb(81, 100, 81);
+    background-color:  rgb(153, 185, 119);
+}
+
+#abtusbtn:visited{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px rgb(102, 162, 102);
+    background-color:  rgb(153, 185, 119);
+}
+/* index btn */
+
+/* item */
+#item-backgroundimage{
+    background-image: url(../img/item-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;  
+    background-attachment: fixed; 
+    height: 85vh;  
+}
+
+.item-heding{
+    margin-top: 260px;
+    font-size: 4rem;
+}
+
+#j-slider-middle{
+    padding-top: 100px;
+}
+
+.Card-height{
+    border-radius: 20px;
+}
+
+#item-button{
+    position: fixed;
+    right: 0%;
+    top: 13%;
+    z-index: 2;
+}
+
+.TextCenter{
+    padding-top: 1vh;
+}
+
+.TextCenter1{
+    padding-top: 1vh;
+}
+
+.add-to-cart{
+    width: 130px;
+    border-radius: 18px;
+    margin: auto;
+    margin-top: -1vh;
+}
+
+.price{
+    margin-top: 2.3vh;
+}
+
+.item-modal-bodyHeading{
+    margin: auto;
+}
+
+#totalitemPriceinModal{
+    width: 650px;
+}
+
+.cardimg{
+    border-radius: 50px 50px 30px 30px;
+}
+
+.addToCard-btninCard{
+    margin-bottom: 30px;
+}
+
+#aboutUsTreeLogo{
+    display: flex;
+    justify-content: center;
+}
+
+#h-goalsinAboutUs{
+    color: #435334;
+    font-weight: 400;
+}
+
+#j-item-modal-img-1,#j-item-modal-img-2,#j-item-modal-img-3,#j-item-modal-img-4,#j-item-modal-img-5,#j-item-modal-img-6,
+#j-item-modal-img-7,#j-item-modal-img-8,#j-item-modal-img-9,#j-item-modal-img-10,#j-item-modal-img-11,#j-item-modal-img-12
+,#j-item-modal-img-13,#j-item-modal-img-14,#j-item-modal-img-15,#j-item-modal-img-16,#j-item-modal-img-17,#j-item-modal-img-18{
+    width: 17rem;
+}
+
+@media screen and (min-width: 400px) {
+#j-item-modal-img-1,#j-item-modal-img-2,#j-item-modal-img-3,#j-item-modal-img-4,#j-item-modal-img-5,#j-item-modal-img-6,
+    #j-item-modal-img-7,#j-item-modal-img-8,#j-item-modal-img-9,#j-item-modal-img-10,#j-item-modal-img-11,#j-item-modal-img-12
+    ,#j-item-modal-img-13,#j-item-modal-img-14,#j-item-modal-img-15,#j-item-modal-img-16,#j-item-modal-img-17,#j-item-modal-img-18{
+        height: 57vh;
+    }
+  }
+
+
+/* About Us */
+
+ /* section0 */
+.team0{
+    width: 100%;
+    height: 46.5vh;
+    background-image: url(../img/j-body-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team0 .teambox0{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* move move */
+    position: relative;
+}
+
+.team0 .teambox0 .profile0{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px #435334;
+    transition: 1s;
+}
+
+.team0 .teambox0 .profile0:hover{
+    border-radius: 20px;
+    height:300px;
+    width: 500px;
+}
+
+
+.team0 .teambox0 .profile0 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px #435334;
+    z-index: 2;
+    transition: 1s;
+}
+
+.team0 .teambox0 .profile0:hover img{
+    border-radius: 20px;
+    margin-left: -500px;
+}
+
+.team0 .teambox0 .profile0 .info0{
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    transition: 1s;
+}
+
+.team0 .teambox0 .profile0:hover .info0{
+    left: 40%;
+}
+
+.team0 .teambox0 .profile0 .info0 .name0{
+    color: #435334;
+    margin-right: 15px;
+}
+
+.team0 .teambox0 .profile0 .info0 .teamicon0 i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #a2c795;
+}
+
+.team0 .teambox0 .profile0 .info0 .teamicon0 i:hover{
+    color: #435334;
+}
+
+
+/* section1 */
+.team1{
+    width: 100%;
+    height: 43vh;
+    background-image: url(../img/j-body-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team1 .teambox1{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* move move */
+    position: relative;
+    top: 13%;
+}
+
+.team1 .teambox1 .profile1{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px black;
+    transition: 1s;
+}
+
+.team1 .teambox1 .profile1:hover{
+    border-radius: 20px;
+    height:300px;
+    width: 500px;
+}
+
+.team1 .teambox1 .profile1 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px black;
+    z-index: 2;
+    transition: 1s;
+}
+
+.team1 .teambox1 .profile1:hover img{
+    border-radius: 20px;
+    margin-right: -500px;
+}
+
+.team1 .teambox1 .profile1 .info1{
+    position: absolute;
+    text-align: center;
+    right: 15%;
+    transition: 1s;
+}
+
+.team1 .teambox1 .profile1:hover .info1{
+    right: 40%;
+}
+
+.team1 .teambox1 .profile1 .info1 .name1{
+    color:  #435334;
+    margin-right: 15px;
+}
+
+.team1 .teambox1 .profile1 .info1 .teamicon1 i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #a2c795;
+}
+
+.team1 .teambox1 .profile1 .info1 .teamicon1 i:hover{
+    color: #435334;
+}
+
+/* section2 */
+.team2{
+    width: 100%;
+    height: 43vh;
+    background-image: url(../img/j-body-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team2 .teambox2{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* move move */
+    position: relative;
+    top: 13%;
+}
+
+.team2 .teambox2 .profile2{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px black;
+    transition: 1s;
+}
+
+.team2 .teambox2 .profile2:hover{
+    border-radius: 20px;
+    height:300px;
+    width: 500px;
+}
+
+.team2 .teambox2 .profile2 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px #435334;
+    z-index: 2;
+    transition: 1s;
+}
+
+.team2 .teambox2 .profile2:hover img{
+    border-radius: 20px;
+    margin-left: -500px;
+}
+
+.team2 .teambox2 .profile2 .info2{
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    transition: 1s;
+}
+
+.team2 .teambox2 .profile2:hover .info2{
+    left: 40%;
+}
+
+.team2 .teambox2 .profile2 .info2 .name2{
+    color: #435334;
+    margin-right: 15px;
+}
+
+.team2 .teambox2 .profile2 .info2 .teamicon2 i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #a2c795;
+}
+
+.team2 .teambox2 .profile2 .info2 .teamicon2 i:hover{
+    color: #435334;
+}
+
+/* about us end */
+
+/* frugality start */
+/* Common styles */
+.j-frutyMiniPic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.j-frutyMiniPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the gradient colors as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.j-frutyMiniPic:hover .gradient-overlay {
+    opacity: 1;
+}
+
+.j-frutyMiniPic:hover h4{
+    display: block;
+
+}
+
+.j-frutyMiniPic h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Styles from the second CSS */
+.subheading-inFrugality {
+    font-size: 3rem;
+}
+
+.column img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+#frugalityfont h3 {
+    font-size: 30px;
+}
+
+#frugalityfont p {
+    font-size: 22px;
+}
+
+.frugalityData {
+    width: 130px;
+    height: 130px;
+}
+
+/* Additional styles for the frugality section */
+.container {
+    margin-top: 5%;
+}
+
+/* Add any other specific styles you need for your layout */
+
+/* h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; 
+} */
+
+p {
+    font-size: 18px; /* Reduce paragraph text size */
+    text-align: justify; /* Justify paragraph text for readability */
+}
+
+.frugality-copyrightFont{
+    font-size: 20px;
+}
+
+
+/* FAQ start */
+.faq-icon{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.faq-fontFamily{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+}
+
+@media (max-width: 768px) {
+   
+}
+
+/* FAQ end */
